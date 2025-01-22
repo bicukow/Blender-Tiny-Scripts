@@ -2,7 +2,7 @@ import bpy
 from re import search
 
 node_groups = [_ for _ in bpy.data.node_groups if _.is_editable] #filter linked nodes  
-regex_search = '\.\d\d\d'
+regex_search = '\.\d\d\d' #regex search for tails '.001'
 
 #remove ".001" tail if node is single
 for i in node_groups:
